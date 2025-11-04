@@ -5,6 +5,8 @@ import jm.task.core.jdbc.model.User;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
+    private Object List;
+
     public void createUsersTable() {
 
     }
@@ -22,10 +24,25 @@ public class UserServiceImpl implements UserService {
     }
 
     public List<User> getAllUsers() {
-        return null;
+        return (List<User>) List;
     }
 
     public void cleanUsersTable() {
+
+    }
+
+    @Override
+    public void createUser(String иван, String иванов, byte b) {
+
+    }
+
+    @Override
+    public void displayAllUsers() {
+
+    }
+
+    @Override
+    public void close() {
 
     }
 }

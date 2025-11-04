@@ -16,4 +16,11 @@ public interface UserService {
     List<User> getAllUsers();
 
     void cleanUsersTable();
+
+    void createUser(String иван, String иванов, byte b);
+
+    void displayAllUsers();
+
+    void close();
+
 }
